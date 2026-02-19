@@ -2,7 +2,8 @@ FROM ghcr.io/pterodactyl/yolks:java_17
 
 USER root
 
-RUN apk update && \
-    apk add --no-cache jq curl bash git
+RUN apt update && \
+    apt install -y jq curl git bash && \
+    apt clean && rm -rf /var/lib/apt/lists/*
 
 USER container
