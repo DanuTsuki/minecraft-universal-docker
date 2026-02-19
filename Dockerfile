@@ -1,4 +1,4 @@
-FROM ghcr.io/pterodactyl/yolks:java_17
+FROM ghcr.io/pterodactyl/yolks:java_21
 
 USER root
 
